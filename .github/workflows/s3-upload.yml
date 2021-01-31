@@ -9,6 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Node
+        uses: actions/setup-node@v1
       - name: Build React App
         run: npm install && npm run build
       - uses: actions/checkout@master
