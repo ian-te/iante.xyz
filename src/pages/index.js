@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
+import { Version } from "../components/Version"
 
 // styles
 const pageStyles = {
@@ -14,6 +15,7 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <Helmet><title>iante.xyz &mdash; Home Page</title></Helmet>
       <h2>iante.xyz</h2>
+      <Version />
     </main>
   )
 }
