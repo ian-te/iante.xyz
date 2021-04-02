@@ -51,7 +51,8 @@ export const pageQuery = graphql`
         logo {
           childImageSharp {
             gatsbyImageData(
-              width: 90
+              width: 60
+              layout: CONSTRAINED
               placeholder: DOMINANT_COLOR
               formats: [AUTO, WEBP, AVIF]
             )
@@ -65,10 +66,10 @@ export const pageQuery = graphql`
         logo {
           childImageSharp {
             gatsbyImageData(
-              width: 90
+              width: 50
               height: 40
               placeholder: BLURRED
-              layout: FULL_WIDTH
+              layout: CONSTRAINED
               formats: [AUTO, WEBP, AVIF]
             )
           }
@@ -77,3 +78,6 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+#00b336
+#08cf65

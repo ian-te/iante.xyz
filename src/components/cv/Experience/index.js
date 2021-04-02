@@ -37,15 +37,20 @@ const Wrapper = styled.details`
 `;
 
 const Image = styled.div`
-  top: 0;
+  top: -15px;
   right: 100%;
   display: inline-block;
   width: 100px;
-  height: 60px;
+  height: 100px;
+  background-color: #eee;
+  border-radius: 200px;
   border-radius: 100px;
   display: flex;
   align-items: center;
   justify-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
   margin-right: 20px;
   position: absolute;
   right: 100%;
