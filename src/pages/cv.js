@@ -78,6 +78,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-#00b336
-#08cf65
