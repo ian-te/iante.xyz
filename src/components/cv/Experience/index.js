@@ -19,13 +19,16 @@ export const Experience = ({ employers, label }) => {
 
 const Wrapper = styled.details`
   position: relative;
-  summary {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-  }
   time {
     font-size: 80%;
+  }
+  summary {
+    display: flex;
+    &:before {
+      content: ">";
+      display: none !important;
+    }
+    justify-content: space-between;
   }
   &:not(:last-child) {
     margin-bottom: 20px;

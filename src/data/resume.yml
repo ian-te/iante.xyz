@@ -15,13 +15,22 @@ basics:
     countryCode: NL
 
   skills:
-    - ES6, Typescript
-    - React, Redux
-    - Contentful, Gatsby.js
-    - Node.js
-    - Git, Linux
-    - MongoDB
-    - Amazon Web Services
+    - - ES6
+      - Typescript
+    - - React
+      - Redux
+
+    - - Contentful
+      - Gatsby.js
+
+    - - Node.js
+
+    - - Git
+      - Linux
+
+    - - MongoDB
+      - SQL
+    - - Amazon Web Services
 
 employers:
   - name: Twill by Maersk

@@ -7,7 +7,12 @@ const Wrapper = styled.div`
   @media (min-width: 600px) {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
   }
+`;
+
+const Label = styled.div`
+  font-size: 24px;
 `;
 
 export const Basics = ({ name, label, email, phone, summary, location }) => {
@@ -15,7 +20,7 @@ export const Basics = ({ name, label, email, phone, summary, location }) => {
     <Section img={<img src="https://via.placeholder.com/150" />}>
       <header>
         <Name>{name}</Name>
-        {label}
+        <Label>{label}</Label>
       </header>
       <Wrapper>
         <div>

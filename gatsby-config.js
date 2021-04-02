@@ -64,5 +64,12 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-plugin-pdf",
+      options: {
+        paths: ["/cv"],
+        outputPath: "/public/exports",
+      },
+    },
   ],
 };
