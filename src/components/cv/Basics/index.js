@@ -27,6 +27,7 @@ export const Basics = ({ name, label, email, phone, summary, location }) => {
           <div>
             <a href={`mailto:${email}`}>{email}</a>
           </div>
+          <a href="/exports/cv.pdf">pdf</a>
         </div>
         <div>
           <div>

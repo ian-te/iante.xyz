@@ -7,7 +7,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 const convertDate = (date) => DateTime.fromISO(date).toFormat("MMM yyyy");
 
 export const Experience = ({ employers, label }) => {
-  console.log(">>>", employers, DateTime);
   return (
     <Section label={label || "experience"}>
       <dl>
@@ -19,6 +18,8 @@ export const Experience = ({ employers, label }) => {
 
 const Wrapper = styled.details`
   position: relative;
+  page-break-inside: avoid;
+  padding: 20px 0;
   time {
     font-size: 80%;
   }
@@ -31,7 +32,6 @@ const Wrapper = styled.details`
     justify-content: space-between;
   }
   &:not(:last-child) {
-    margin-bottom: 20px;
     border-bottom: 1px solid #eee;
   }
 `;
@@ -41,6 +41,7 @@ const Image = styled.div`
   right: 100%;
   display: inline-block;
   width: 100px;
+  height: 60px;
   border-radius: 100px;
   display: flex;
   align-items: center;
