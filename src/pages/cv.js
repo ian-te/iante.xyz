@@ -4,6 +4,7 @@ import { Wrapper } from "../components/cv/Wrapper";
 import { Basics } from "../components/cv/Basics";
 import { Skills } from "../components/cv/Skills";
 import { Experience } from "../components/cv/Experience";
+import "./index.css";
 
 const CVpage = ({ data }) => {
   const {
@@ -42,10 +43,12 @@ export const pageQuery = graphql`
       employers {
         dateStart
         dateEnd
+        position
         achievements
         name
         logo
         achievements
+        description
       }
     }
   }

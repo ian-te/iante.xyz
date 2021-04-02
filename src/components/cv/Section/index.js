@@ -18,7 +18,7 @@ const Wrapper = styled.section`
   grid-template-columns: 1fr 5fr;
   grid-gap: 20px;
   &:not(:last-child) {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 `;
 
@@ -30,8 +30,9 @@ const Image = styled.div`
 
 const Content = styled.div``;
 
-const Label = styled.div`
+const Label = styled.h2`
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-size: 80%;
   color: ${(props) => props.theme.textLight};
 `;

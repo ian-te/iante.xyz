@@ -1,14 +1,23 @@
 import React from "react";
+import styled from "styled-components";
 import { Section } from "../Section";
 
 export const Skills = ({ skills }) => {
   return (
     <Section label="Skills">
-      <ul>
+      <SkillsWrapper>
         {skills.map((skill) => (
-          <li>{skill}</li>
+          <Skill>{skill}</Skill>
         ))}
-      </ul>
+      </SkillsWrapper>
     </Section>
   );
 };
+
+const SkillsWrapper = styled.ul`
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-flow: column;
+`;
+
+const Skill = styled.li``;

@@ -13,14 +13,20 @@ const Wrapper = styled.div`
 export const Basics = ({ name, label, email, phone, summary, location }) => {
   return (
     <Section img={<img src="https://via.placeholder.com/150" />}>
+      <header>
+        <Name>{name}</Name>
+        {label}
+      </header>
       <Wrapper>
         <div>
-          <Name>{name}</Name>
-          {label}
+          <div>
+            <a href={`mailto:${email}`}>{email}</a>
+          </div>
         </div>
         <div>
-          <div>{email}</div>
-          <div>{phone}</div>
+          <div>
+            <a href={`tel:${phone}`}>{phone}</a>
+          </div>
           <div>
             {location.city}, {location.countryCode}
           </div>

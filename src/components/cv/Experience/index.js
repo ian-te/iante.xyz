@@ -9,27 +9,50 @@ export const Experience = ({ employers }) => {
   console.log(">>>", employers, DateTime);
   return (
     <Section label={"experience"}>
-      {employers && employers.map((employer) => <Employer {...employer} />)}
+      <dl>
+        {employers && employers.map((employer) => <Employer {...employer} />)}
+      </dl>
     </Section>
   );
 };
 
-const Wrapper = styled.div`
-  margin-bottom: 20px;
-  border-bottom: 1px solid #eee;
+const Wrapper = styled.details`
+  summary {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  time {
+    font-size: 80%;
+  }
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
 `;
 
-const Employer = ({ name, dateStart, dateEnd, logo, achievements }) => {
+const Employer = ({
+  name,
+  dateStart,
+  dateEnd,
+  position,
+  logo,
+  description,
+  achievements,
+}) => {
   const date = convertDate(dateStart);
   return (
-    <Wrapper>
+    <Wrapper open>
+      <summary>
+        <strong>
+          {position}, {name}
+        </strong>
+        <time>
+          {convertDate(dateStart)} {dateEnd && ` – ${convertDate(dateEnd)}`}
+        </time>
+      </summary>
       <div>
-        <strong>{name}</strong>
-      </div>
-      <div>
-        {convertDate(dateStart)} {dateEnd && ` – ${convertDate(dateEnd)}`}
-      </div>
-      <div>
+        <p>{description}</p>
         <ul>
           {achievements.map((achievement) => (
             <li>{achievement}</li>

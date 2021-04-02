@@ -25,22 +25,36 @@ basics:
 
 employers:
   - name: Twill by Maersk
+    description:
+      Twill (by Maersk) is a logistics service for small and medium-sized businesses. Shipping cargo door-to-door, over land and sea.
+      As a frontend developer, I'm responsible for coding the main application (React, Redux, styled-components) and also some apps for internal use.
 
+    website: https://www.twill.net
+    position: Front-end devleoper
     logo: /src/images/cv/twill-logo.webp
     dateStart: 2019-09-01
     achievements:
       - Established localization process (using Weblate TMS)
-      - Moved WordPress company website to Contentful CMS with Gatsby.js frontend
+      - Moved legacy WordPress company website to Contentful CMS with Gatsby.js frontend
 
   - name: SEMrush
+    description:
+      SEMrush is a tool for gathering insights into content marketing,
+      competitor research, PPC and social media marketing
+    website: https://www.semrush.com
+    position: Front-end devleoper
     dateStart: 2018-08-01
     dateEnd: 2019-08-01
     achievements:
       - berush.com (SEMrush Affiliate Program) new UI development
         React + Redux
       - Created interactive wepabges
+      - Actively participated in team hiring
 
   - name: Wrike
+    description: Wrike is a project management software, with headquarters in San Jose, CA.
+    website: https://www.wrike.com
+    position: Front-end devleoper
     dateStart: 2014-04-01
     dateEnd: 2018-08-01
     achievements:
@@ -51,6 +65,8 @@ employers:
       - wrike.com website development.
 
   - name: Veeam Software
+    website: https://www.veeam.com
+    position: Web devleoper
     dateStart: 2011-11-01
     dateEnd: 2014-04-01
     achievements:
