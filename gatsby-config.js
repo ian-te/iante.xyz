@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "iante.xyz",
-    siteUrl: "https://iante.xyz"
+    siteUrl: "https://iante.xyz",
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -11,7 +11,6 @@ module.exports = {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
           "G-E1LYMWV4DJ", // Google Analytics / GA
-
         ],
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
@@ -42,6 +41,14 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
