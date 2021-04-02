@@ -30,7 +30,6 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     // {
@@ -38,9 +37,11 @@ module.exports = {
     //   options: {},
     // },
     "gatsby-plugin-mdx",
-    "gatsby-transformer-sharp",
-    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-yaml`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

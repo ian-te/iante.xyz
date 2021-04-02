@@ -31,7 +31,7 @@ employers:
 
     website: https://www.twill.net
     position: Front-end devleoper
-    logo: /src/images/cv/twill-logo.webp
+    logo: ../images/logo-twill.png
     dateStart: 2019-09-01
     achievements:
       - Established localization process (using Weblate TMS)
@@ -42,6 +42,7 @@ employers:
       SEMrush is a tool for gathering insights into content marketing,
       competitor research, PPC and social media marketing
     website: https://www.semrush.com
+    logo: ../images/logo-semrush.png
     position: Front-end devleoper
     dateStart: 2018-08-01
     dateEnd: 2019-08-01
@@ -54,6 +55,7 @@ employers:
   - name: Wrike
     description: Wrike is a project management software, with headquarters in San Jose, CA.
     website: https://www.wrike.com
+    logo: ../images/logo-wrike.png
     position: Front-end devleoper
     dateStart: 2014-04-01
     dateEnd: 2018-08-01
@@ -66,6 +68,7 @@ employers:
 
   - name: Veeam Software
     website: https://www.veeam.com
+    logo: ../images/logo-veeam.png
     position: Web devleoper
     dateStart: 2011-11-01
     dateEnd: 2014-04-01

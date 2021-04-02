@@ -29,7 +29,6 @@ export const pageQuery = graphql`
       basics {
         name
         label
-        image
         email
         phone
         url
@@ -46,9 +45,17 @@ export const pageQuery = graphql`
         position
         achievements
         name
-        logo
         achievements
         description
+        logo {
+          childImageSharp {
+            gatsbyImageData(
+              width: 90
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
       }
     }
   }
