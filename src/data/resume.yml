@@ -23,43 +23,43 @@ basics:
     - MongoDB
     - Amazon Web Services
 
-  employers:
-    - name: Twill by Maersk
+employers:
+  - name: Twill by Maersk
 
-      logo: /src/images/cv/twill-logo.webp
-      dateStart: 2019-09-01
-      achievements:
-        - Established localization process (using Weblate TMS)
-        - Moved WordPress company website to Contentful CMS with Gatsby.js frontend
+    logo: /src/images/cv/twill-logo.webp
+    dateStart: 2019-09-01
+    achievements:
+      - Established localization process (using Weblate TMS)
+      - Moved WordPress company website to Contentful CMS with Gatsby.js frontend
 
-    - name: SEMrush
-      dateStart: 2018-08-01
-      dateEnd: 2019-08-01
-      achievements:
-        - berush.com (SEMrush Affiliate Program) new interface UI development
-          React + Redux
-        - Created interactive wepabges
+  - name: SEMrush
+    dateStart: 2018-08-01
+    dateEnd: 2019-08-01
+    achievements:
+      - berush.com (SEMrush Affiliate Program) new UI development
+        React + Redux
+      - Created interactive wepabges
 
-    - name: Wrike
-      dateStart: 2014-04-01
-      dateEnd: 2018-08-01
-      achievements:
-        - Created a WYSIWYG email editor, which integrates with Marketo (CRM) and Crowdin (Translation Management System).
-        - Interactive components for web pages
-        - Multiple web apps for internal use
-        - HTML layouts for emails (gulp, jade, css, inlinecss) for Marketo and operational emails.
-        - wrike.com website development.
+  - name: Wrike
+    dateStart: 2014-04-01
+    dateEnd: 2018-08-01
+    achievements:
+      - Created a WYSIWYG email editor, which integrates with Marketo (CRM) and Crowdin (Translation Management System).
+      - Interactive components for web pages
+      - Multiple web apps for internal use
+      - HTML layouts for emails (gulp, jade, css, inlinecss) for Marketo and operational emails.
+      - wrike.com website development.
 
-    - name: Veeam Software
-      dateStart: 2011-11-01
-      dateEnd: 2014-04-01
-      achievements:
-        - Created layouts for numerous Landing pages and emails.
-        - Created web applications for internal needs
-        - WYSIWYG newsletter emails editor (javascript <-json-> PHP+MySQL).
-        - Several email automation apps (JS, PHP, cURL).
+  - name: Veeam Software
+    dateStart: 2011-11-01
+    dateEnd: 2014-04-01
+    achievements:
+      - Created layouts for numerous Landing pages and emails.
+      - Created web applications for internal needs
+      - WYSIWYG newsletter emails editor (javascript <-json-> PHP+MySQL).
+      - Several email automation apps (JS, PHP, cURL).
 
-  education:
-    - name: St Petersburg State University of IT, Mechanics and Optics
-      speciality: Master’s degree in IT Design
-      dateEnd: 2015-08-01
+education:
+  - name: St Petersburg State University of IT, Mechanics and Optics
+    speciality: Master’s degree in IT Design
+    dateEnd: 2015-08-01

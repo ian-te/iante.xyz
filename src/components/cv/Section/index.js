@@ -6,7 +6,7 @@ export const Section = ({ img, label, children }) => {
     <Wrapper>
       <Image>{img && img}</Image>
       <Content>
-        <Label>{label}</Label>
+        {label && <Label>{label}</Label>}
         {children}
       </Content>
     </Wrapper>
@@ -32,5 +32,6 @@ const Content = styled.div``;
 
 const Label = styled.div`
   text-transform: uppercase;
+  margin-bottom: 20px;
   color: ${(props) => props.theme.textLight};
 `;

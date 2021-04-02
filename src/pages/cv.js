@@ -38,12 +38,14 @@ export const pageQuery = graphql`
           countryCode
         }
         skills
-        employers {
-          dateStart
-          achievements
-          name
-          logo
-        }
+      }
+      employers {
+        dateStart
+        dateEnd
+        achievements
+        name
+        logo
+        achievements
       }
     }
   }
