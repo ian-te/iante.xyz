@@ -80,5 +80,6 @@ employers:
 
 education:
   - name: St Petersburg State University of IT, Mechanics and Optics
-    speciality: Master’s degree in IT Design
+    logo: ../images/logo-itmo.png
+    description: Master’s degree in IT Design
     dateEnd: 2015-08-01

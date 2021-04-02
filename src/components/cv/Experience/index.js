@@ -6,10 +6,10 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const convertDate = (date) => DateTime.fromISO(date).toFormat("MMM yyyy");
 
-export const Experience = ({ employers }) => {
+export const Experience = ({ employers, label }) => {
   console.log(">>>", employers, DateTime);
   return (
-    <Section label={"experience"}>
+    <Section label={label || "experience"}>
       <dl>
         {employers && employers.map((employer) => <Employer {...employer} />)}
       </dl>
@@ -64,20 +64,21 @@ const Employer = ({
         <GatsbyImage image={getImage(logo)} alt={`${name} logo`} />
       </Image>
       <summary>
-        <strong>
-          {position}, {name}
-        </strong>
+        <strong>{[position, name].filter((i) => !!i).join(", ")}</strong>
         <time>
-          {convertDate(dateStart)} {dateEnd && ` – ${convertDate(dateEnd)}`}
+          {dateStart && convertDate(dateStart)}{" "}
+          {dateEnd && ` – ${convertDate(dateEnd)}`}
         </time>
       </summary>
       <div>
         <p>{description}</p>
-        <ul>
-          {achievements.map((achievement) => (
-            <li>{achievement}</li>
-          ))}
-        </ul>
+        {achievements && (
+          <ul>
+            {achievements.map((achievement) => (
+              <li>{achievement}</li>
+            ))}
+          </ul>
+        )}
       </div>
     </Wrapper>
   );

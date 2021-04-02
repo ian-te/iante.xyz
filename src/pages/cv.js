@@ -8,7 +8,7 @@ import "./index.css";
 
 const CVpage = ({ data }) => {
   const {
-    dataYaml: { basics, employers },
+    dataYaml: { basics, employers, education },
   } = data;
   console.log(data);
   return (
@@ -16,6 +16,7 @@ const CVpage = ({ data }) => {
       <Basics {...basics} />
       <Skills skills={basics.skills} />
       <Experience employers={employers}></Experience>
+      <Experience employers={education} label="Education"></Experience>
     </Wrapper>
   );
 };
@@ -47,6 +48,20 @@ export const pageQuery = graphql`
         name
         achievements
         description
+        logo {
+          childImageSharp {
+            gatsbyImageData(
+              width: 90
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
+      }
+      education {
+        name
+        description
+        dateEnd
         logo {
           childImageSharp {
             gatsbyImageData(
