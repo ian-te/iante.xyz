@@ -26,11 +26,11 @@ basics:
     - - Node.js
 
     - - Git
-      - Linux
+    - - Linux
 
     - - MongoDB
       - SQL
-    - - Amazon Web Services
+    - - AWS
 
 employers:
   - name: Twill by Maersk
