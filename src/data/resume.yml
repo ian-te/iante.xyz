@@ -25,11 +25,12 @@ basics:
 
     - - Node.js
 
-    - - Git
-    - - Linux
-
     - - MongoDB
       - SQL
+
+    - - Docker
+    - - Git
+
     - - AWS
 
 employers:
