@@ -5,6 +5,7 @@ import { Basics } from "../components/cv/Basics";
 import { Skills } from "../components/cv/Skills";
 import { Experience } from "../components/cv/Experience";
 import "./index.css";
+import { Helmet } from "react-helmet";
 
 const CVpage = ({ data }) => {
   const {
@@ -13,6 +14,9 @@ const CVpage = ({ data }) => {
   console.log(data);
   return (
     <Wrapper>
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
       <Basics {...basics} />
       <Skills skills={basics.skills} />
       <Experience employers={employers}></Experience>
