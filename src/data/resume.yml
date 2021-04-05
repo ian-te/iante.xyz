@@ -2,7 +2,7 @@
 basics:
   name: Ian Te
   label: Front End Developer
-  image: "/src/images/cv/ian_te.jpg"
+  image: ../images/ian_te.jpg
   email: info@iante.xyz
   phone: "+31 6 29361596"
   url: https://iante.xyz
@@ -56,7 +56,7 @@ employers:
     dateStart: 2018-08-01
     dateEnd: 2019-08-01
     achievements:
-      - berush.com (SEMrush Affiliate Program) new UI development
+      - Development of the new UI ofberush.com (SEMrush Affiliate Program)
         React + Redux
       - Created interactive wepabges
       - Actively participated in team hiring

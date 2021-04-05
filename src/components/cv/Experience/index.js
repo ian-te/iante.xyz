@@ -42,9 +42,6 @@ const Image = styled.div`
   display: inline-block;
   width: 100px;
   height: 100px;
-  background-color: #eee;
-  border-radius: 200px;
-  border-radius: 100px;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -69,9 +66,9 @@ const Employer = ({
   const date = convertDate(dateStart);
   return (
     <Wrapper open>
-      <Image>
+      {/* <Image>
         <GatsbyImage image={getImage(logo)} alt={`${name} logo`} />
-      </Image>
+      </Image> */}
       <summary>
         <strong>{[position, name].filter((i) => !!i).join(", ")}</strong>
         <time>
@@ -81,13 +78,14 @@ const Employer = ({
       </summary>
       <div>
         <p>{description}</p>
-        {achievements && (
+        {achievements && [
+          <p>Achievements:</p>,
           <ul>
             {achievements.map((achievement) => (
               <li>{achievement}</li>
             ))}
-          </ul>
-        )}
+          </ul>,
+        ]}
       </div>
     </Wrapper>
   );

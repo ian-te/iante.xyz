@@ -15,10 +15,17 @@ export const Section = ({ img, label, children }) => {
 
 const Wrapper = styled.section`
   display: grid;
-  grid-template-columns: 1fr 5fr;
   grid-gap: 20px;
   &:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  @media (min-width: 600px) {
+    grid-template-columns: 1fr 5fr;
   }
 `;
 
@@ -32,7 +39,7 @@ const Content = styled.div``;
 
 const Label = styled.h2`
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-size: 80%;
   color: ${(props) => props.theme.textLight};
 `;

@@ -38,6 +38,17 @@ export const pageQuery = graphql`
           city
           countryCode
         }
+        image {
+          childImageSharp {
+            gatsbyImageData(
+              width: 170
+              height: 170
+              placeholder: BLURRED
+              layout: CONSTRAINED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
         skills
       }
       employers {
