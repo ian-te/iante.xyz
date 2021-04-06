@@ -19,7 +19,7 @@ export const Experience = ({ employers, label }) => {
 const Wrapper = styled.details`
   position: relative;
   page-break-inside: avoid;
-  padding: 20px 14px;
+  padding: 20px 0;
   time {
     font-size: 80%;
   }

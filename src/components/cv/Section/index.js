@@ -24,7 +24,7 @@ const Wrapper = styled.section`
     margin-top: 0;
     padding-top: 0;
   }
-  @media (min-width: 600px) {
+  @media (min-width: 480px) {
     grid-template-columns: 1fr 5fr;
   }
 `;

@@ -10,6 +10,11 @@ const Wrapper = styled.div`
     justify-content: space-between;
     margin-top: 20px;
   }
+  @media print {
+    .noprint {
+      display: none;
+    }
+  }
 `;
 
 const Label = styled.div`
@@ -38,7 +43,9 @@ export const Basics = ({
           <div>
             <a href={`mailto:${email}`}>{email}</a>
           </div>
-          <a href="/ian_te_CV.pdf">Download CV in pdf</a>
+          <a href="/ian_te_CV.pdf" className="noprint">
+            Download CV in pdf
+          </a>
         </div>
         <div>
           <div>

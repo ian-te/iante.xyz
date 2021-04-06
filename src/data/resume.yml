@@ -37,7 +37,7 @@ employers:
   - name: Twill by Maersk
     description:
       Twill (by Maersk) is a logistics service for small and medium-sized businesses. Shipping cargo door-to-door, over land and sea.
-      As a frontend developer, I'm responsible for coding the main application (React, Redux, styled-components) and also some apps for internal use.
+      I'm responsible for coding the main application (React, Redux, styled-components) and also some apps for internal use.
 
     website: https://www.twill.net
     position: Front-end developer
@@ -63,7 +63,7 @@ employers:
       - Actively participated in team hiring
 
   - name: Wrike
-    description: Wrike is a project management software, with headquarters in San Jose, CA.
+    description: Wrike is a project management software, with headquarters in San Jose, CA. I worked as a developer for Marketing Operations team.
     website: https://www.wrike.com
     logo: ../images/logo-wrike.png
     position: Front-end developer
@@ -77,6 +77,7 @@ employers:
       - wrike.com website development.
 
   - name: Veeam Software
+    description: Veeam is a backup and data management platform for Cloud, Virtual and Physical machines. I worked as a web developer for EMEA marketing team.
     website: https://www.veeam.com
     logo: ../images/logo-veeam.png
     position: Web developer
