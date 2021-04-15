@@ -49,7 +49,7 @@ function Provider({ children }) {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
         <GlobalStyles />
-        <Header toggleTheme={toggleTheme} theme={theme} />
+        {/* <Header toggleTheme={toggleTheme} theme={theme} /> */}
         {children}
       </>
     </ThemeProvider>
