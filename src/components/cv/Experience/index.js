@@ -2,7 +2,6 @@ import React from "react";
 import { Section } from "../Section";
 import { DateTime } from "luxon";
 import styled from "styled-components";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const convertDate = (date) => DateTime.fromISO(date).toFormat("MMM yyyy");
 
@@ -36,24 +35,6 @@ const Wrapper = styled.details`
   }
 `;
 
-const Image = styled.div`
-  top: -15px;
-  right: 100%;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  margin-right: 20px;
-  position: absolute;
-  right: 100%;
-  margin-right: 20px;
-`;
-
 const Employer = ({
   name,
   dateStart,
@@ -63,7 +44,6 @@ const Employer = ({
   description,
   achievements,
 }) => {
-  const date = convertDate(dateStart);
   return (
     <Wrapper open>
       {/* <Image>

@@ -11,7 +11,6 @@ const CVpage = ({ data }) => {
   const {
     dataYaml: { basics, employers, education },
   } = data;
-  console.log(data);
   return (
     <Wrapper>
       <Helmet>
