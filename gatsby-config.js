@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: "iante.xyz",
+    title: "Ian Te",
+    description: "Ian Te page",
+    author: "Ian Te",
+    keywords: ["frontend"],
     siteUrl: "https://iante.xyz",
   },
   plugins: [
-    "gatsby-plugin-postcss",
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -32,11 +34,10 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    // {
-    //   resolve: "gatsby-plugin-manifest",
-    //   options: {},
-    // },
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {icon: `src/images/Favicon.png`},
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-yaml`,
