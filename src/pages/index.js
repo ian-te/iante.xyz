@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
 import { Version } from "../components/Version";
 import styled from "styled-components";
 
@@ -21,9 +20,6 @@ const IndexPage = () => {
   return (
     <Main>
       <div>
-        <Helmet>
-          <title>iante.xyz &mdash; Home Page</title>
-        </Helmet>
         <h2>iante.xyz</h2>
         <Version />
       </div>

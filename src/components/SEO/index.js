@@ -1,9 +1,18 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
-function SEO({ description, lang="en-US", meta, image: metaImage, title, pathname }) {
+function SEO({
+  description,
+  lang = "en-US",
+  meta,
+  image: metaImage = {
+    src: "/social.png",
+  },
+  title,
+  pathname,
+}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -18,14 +27,14 @@ function SEO({ description, lang="en-US", meta, image: metaImage, title, pathnam
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
   const image =
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-      : null
-  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+      : null;
+  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null;
 
   return (
     <Helmet
@@ -107,15 +116,15 @@ function SEO({ description, lang="en-US", meta, image: metaImage, title, pathnam
         )
         .concat(meta)}
     />
-  )
+  );
 }
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-  title: "Homepage"
-}
+  title: "Homepage",
+};
 
 SEO.propTypes = {
   description: PropTypes.string,
@@ -128,6 +137,6 @@ SEO.propTypes = {
     width: PropTypes.number.isRequired,
   }),
   pathname: PropTypes.string,
-}
+};
 
-export default SEO
+export default SEO;
