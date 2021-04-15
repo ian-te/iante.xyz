@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { Header } from "../components/Header";
 import { lightTheme, darkTheme } from "./theme";
+import { useDarkMode } from "./useDarkMode";
 
 const GlobalStyles = createGlobalStyle`
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap");
@@ -40,23 +42,14 @@ a {
 `;
 
 function Provider({ children }) {
-  const [theme, setTheme] = useState("light");
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  };
+  const [theme, toggleTheme] = useDarkMode();
 
   // Return the layout based on the current theme
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
         <GlobalStyles />
-        <button style={{ position: "absolute" }} onClick={toggleTheme}>
-          Toggle theme
-        </button>
+        <Header toggleTheme={toggleTheme} theme={theme} />
         {children}
       </>
     </ThemeProvider>
