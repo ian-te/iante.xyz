@@ -5,12 +5,10 @@ import { lightTheme, darkTheme } from "./theme";
 import { useDarkMode } from "./useDarkMode";
 
 const GlobalStyles = createGlobalStyle`
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap");
-
 body {
   padding: 0;
   margin: 0;
-  font-family: Inter, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.5;
   background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
