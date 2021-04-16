@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import { Header } from "../components/Header";
 import { lightTheme, darkTheme } from "./theme";
-import { useDarkMode } from "./useDarkMode";
 
 const GlobalStyles = createGlobalStyle`
 body {
@@ -40,14 +38,11 @@ a {
 `;
 
 function Provider({ children }) {
-  const [theme, toggleTheme] = useDarkMode();
-
   // Return the layout based on the current theme
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
         <GlobalStyles />
-        {/* <Header toggleTheme={toggleTheme} theme={theme} /> */}
         {children}
       </>
     </ThemeProvider>
