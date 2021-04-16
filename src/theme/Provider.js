@@ -39,6 +39,7 @@ a {
 
 function Provider({ children }) {
   // Return the layout based on the current theme
+  const theme = "light";
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
