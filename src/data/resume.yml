@@ -43,13 +43,15 @@ basics:
 employers:
   - name: Primer
     description: Primer is a no-code automation for payments.
-      I'm responsible for primer.io website coding and maintenance, implementing animations and improving editorial expeirence
+      I'm responsible for primer.io website coding and maintenance, implementing animations and improving editorial expeirence.
     website: https://primer.io
     position: Web developer
     # logo: ../images/logo-twill.png
     dateStart: 2021-12-06
     achievements:
-      - Move from Contentful to DatoCMS
+      - Organising work with contractors
+      - Architecture planning
+      - Full ownership of technical side of the website
 
   - name: Twill by Maersk
     description:
