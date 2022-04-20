@@ -17,11 +17,18 @@ basics:
   skills:
     - - ES6
       - Typescript
+
     - - React
       - Redux
 
-    - - Contentful
+    - - Jamstack
       - Gatsby.js
+
+    - - GSAP
+
+    - - Three.js
+      - react-three-fiber
+      - drei
 
     - - Node.js
 
@@ -34,15 +41,25 @@ basics:
     - - AWS
 
 employers:
+  - name: Primer
+    description: Primer is a no-code automation for payments.
+      I'm responsible for primer.io website coding and maintenance, implementing animations and improving editorial expeirence
+    website: https://primer.io
+    position: Web developer
+    # logo: ../images/logo-twill.png
+    dateStart: 2021-12-06
+    achievements:
+      - Move from Contentful to DatoCMS
+
   - name: Twill by Maersk
     description:
       Twill (by Maersk) is a logistics service for small and medium-sized businesses. Shipping cargo door-to-door, over land and sea.
       I'm responsible for coding the main application (React, Redux, styled-components) and also some apps for internal use.
-
     website: https://www.twill.net
     position: Front-end developer
     logo: ../images/logo-twill.png
     dateStart: 2019-09-01
+    dateEnd: 2021-11-30
     achievements:
       - Established localization process (using Weblate TMS)
       - Moved legacy WordPress company website to Contentful CMS with Gatsby.js frontend

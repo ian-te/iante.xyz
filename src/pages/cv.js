@@ -12,7 +12,7 @@ const CVpage = ({ data }) => {
   } = data;
   return (
     <Wrapper>
-      <Helmet>
+      <Helmet title="Ian Te — CV">
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <Basics {...basics} />
@@ -59,7 +59,7 @@ export const pageQuery = graphql`
         position
         achievements
         name
-        achievements
+        website
         description
         logo {
           childImageSharp {
