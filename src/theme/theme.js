@@ -4,6 +4,7 @@ export const lightTheme = {
   textLight: "#0C0C0D44",
   toggleBorder: "#FFF",
   gradient: "linear-gradient(#39598A, #79D7ED)",
+  link: "blue",
 };
 
 export const darkTheme = {
