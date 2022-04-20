@@ -57,7 +57,11 @@ const Employer = ({
           {dateEnd && ` – ${convertDate(dateEnd)}`}
         </time>
       </summary>
-      {website && <a href={website}>{website}</a>}
+      {website && (
+        <a target="_blank" rel="noopener noreferrer" href={website}>
+          {website}
+        </a>
+      )}
       <div>
         <p>{description}</p>
         {achievements && [
